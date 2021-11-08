@@ -1,4 +1,4 @@
-# Learn Private Modules
+# How to create and use Private Modules
 
 This repository describes how to create a private module within your Terraform Cloud and then how to use this module with Terraform Cloud
 
