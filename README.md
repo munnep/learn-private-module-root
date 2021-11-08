@@ -50,10 +50,16 @@ You are now going to actually use the private module you used created.
 ```
 https://github.com/munnep/learn-private-module-root
 ```
-2. in the file ```main.tf``` change the link to your own organization  
+2. in the file ```main.tf``` change the link to your own organization and change the version to the tag release you gave it. 
 ```
 module "s3-webapp" {
-  source  = "app.terraform.io/<your organization>/s3-webapp/aws"
+  source  = "app.terraform.io/patrickmunne/s3-webapp/aws"
+  name        = var.name
+  region = var.region
+  prefix = var.prefix
+  version = "1.0.0"
+}
+
 ```
 3. Go into your Terraform Cloud account
 4. Create a new workspace      
